@@ -1,0 +1,121 @@
+html, body {
+    height:100%;
+    width: 100%;
+    background-color: transparent;
+}
+
+
+img {
+    grid-row: 1/4;
+    position: absolute;
+    grid-column: 1/6;
+    opacity: 0.7;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+}
+.flex-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    display: grid;
+    gap: 2%;
+    row-gap: 20%;
+    grid-template-columns: repeat(9, 1fr);
+    margin: 0 5%;
+    color: white;
+    font-size: 1.2em;
+}
+.numberQ {
+    grid-column: 2/5;
+    font-size: 1em;
+}
+.score {
+    grid-column: 8/10;
+    font-size: 1em;
+}
+.game {
+    height: 100%;
+}
+.quiz {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    gap: 2%;
+    flex-direction: column;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    height: 100%;
+    background-color: #FFFFFF;
+}
+.grid-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem black;
+}
+h1 {
+    font-size: 2em;
+    margin: 2%;
+}
+.answer {
+    grid-column: 2/10;
+    grid-row: 1/2;
+    /* background-color: #FFFFFF; */
+    padding-left: 2%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+}
+.green {
+    background-color: green;
+}
+.red {
+    transition: background-color 1s ease;
+    background-color: #F52929;
+}
+.blue {
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    color: #FFFFFF;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    border: black;
+    background-color: black;
+}
+.Bar {
+    width: 100%;
+    height: 2rem;
+    border:1px solid white;
+    grid-column: 2/4;
+}
+.progressBar {
+    background-color: white;
+    height: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    
+}
+ @media screen and (max-width: 575px){
+
+    .header {
+        font-size: 1em;
+    }
+    .numberQ {
+        grid-column: 1/4;
+    }
+    .score {
+        grid-column: 8/10;
+    }
+} 

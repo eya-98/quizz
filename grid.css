@@ -1,0 +1,44 @@
+html {
+    height:100%;
+    width: 100%;
+}
+body {
+display: grid;
+width: 100%;
+margin-top: 0;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.467);
+grid-template-columns: 1fr 3fr 1fr;
+grid-template-rows: 1fr 4fr; 
+min-width: 280px;
+margin: 0;
+padding: 0;
+}
+.a {
+    grid-column: 1 /2;
+    grid-row: 1/2;
+}
+.b {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.c {
+    grid-column: 3/4;
+
+}
+.d {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.e {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+@media screen and (max-width: 873px) {
+    .e {
+        padding: 4%;
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+}
+

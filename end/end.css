@@ -1,0 +1,48 @@
+html, body {
+    height:100%;
+    width: 100%;
+    background-color: transparent;
+}
+img {
+    grid-row: 1/4;
+    position: absolute;
+    grid-column: 1/6;
+    /* opacity: 0.7; */
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+}
+.e {
+    opacity: 0.7;
+    justify-content: center;
+    background-color: black;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    align-items: center;
+}
+.width {
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 50%;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    cursor: pointer;
+    border: none ;
+}
+input {
+    height: 8%;}
+.score {
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.width:hover {
+    cursor: pointer;
+    box-shadow: 0 0.2rem 1.2rem white;
+}
