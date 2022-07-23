@@ -1,2 +1,2 @@
 # quizz
-![ Alt text](demo (1).gif) / ! [](demo (1).gif)
+![Alt text](demo (1).gif) / ! [](demo (1).gif)
